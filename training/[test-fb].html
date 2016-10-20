@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>[test-fb]</title>
+<style>
+body{
+  background-color: black;
+}
+*{
+
+font-family: helvetica;	
+}
+
+#container{
+display: block;
+
+}
+
+h2{
+margin: 2px 2px 2px 0px;
+padding-top: 12px;
+font-size: 34px;
+
+}
+
+label#free {
+    font-size: 18px;
+}
+
+select#Bulan {
+    height: 25px;
+}
+
+.tarikh{ margin-left: -4px;
+  display: inline-block;
+  padding-top:5px; 
+  height: 25px;
+}
+
+#tarikh{
+  display: block;
+}
+div.nama{
+  display: -webkit-inline-box;
+  width: 42%;
+}
+
+
+#firstname input{
+display: inline-block;
+
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 20px;
+    margin-top: 5px;
+
+
+}
+
+#lastname input{
+
+	display: inline-block;
+  
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 20px;
+    margin-top: 5px;
+    margin-left: 1px;
+  
+}
+
+#email input{
+display: block;
+width: 429px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 20px;
+    margin-top: 5px;
+
+}
+
+#reenter input{
+display: block;
+width: 429px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 20px;
+    margin-top: 5px;
+}
+
+#newpassword input{
+display: block;
+width: 429px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 20px;
+    margin-top: 5px;
+
+}
+#borang{
+background-color:#dddddd;
+width: 453px;
+margin: 2% 30%;
+padding: 20px 50px 20px;
+font-family: Helvetica;
+font-size: 13px;
+    }
+
+
+
+
+}
+.rad{
+  display: block;
+}
+
+#bullet{
+display: inline-block;
+
+}
+
+#biru {
+    font-size: 11px;
+    display: inline-block;
+    margin-top: 8px;
+    vertical-align: top;
+    padding-left: 10px;
+    width: 170px;
+}
+
+#agree{
+      font-size: 12px;
+      color: #7c7e80;
+      width: 350px;
+    }
+
+
+div div div #agree{
+  position: relative;
+margin:10px 260px 10px -10px;
+padding: 10px 10px 10px 10px;
+}
+
+
+#rad1{
+
+position: relative;
+margin: 3px 3px 0px -195px;
+}
+
+#rad2{
+
+position: relative;
+margin: 3px 3px 0px 5px;  
+}
+p{
+
+  font-color:blue;
+  font-family: helvetica,
+  font-size: 10px;
+}
+
+#signup{
+    margin-top: 10px;
+    width: 202px;
+    height: 38px;
+    border: 0px #F0F8FF solid;
+}
+#button{
+border: 0px;
+padding: 26px;
+margin-left: -33px;
+
+}
+
+label{
+  font-family: helvetica;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: none;
+    cursor: auto;
+}
+.rb{
+
+
+}
+#month{width: 87px;
+  font-size: 10px;
+  
+}
+select#hari {
+    height: 25px;
+}
+
+#day{ width:47px;
+  font-size: 10px;
+
+}
+select {
+    height: 25px;
+}
+
+#year{width:43px;
+  font-size: 10px;
+  padding-top: 5px;
+
+
+}
+#radiobutton{
+
+  
+}
+</style>
+</head>
+<body>
+
+<div id="container">
+	
+  <div id="borang">
+  
+  <h2><label id="signup">Sign Up</label></h2>
+  <p><label id="free">It's free and always will be.</label></p>
+
+    <form> 
+      
+    <div class="nama" >
+      <div id="firstname">
+      <input type="text" name="First name" placeholder="First name" >
+      </div>
+      <div class="nama" id="lastname">      
+      <input type="text" name="Last name" placeholder="Last name" >
+      </div>
+    </div> <!--nama!-->
+
+    <div id="email">
+    
+      <input type="text" name="Email or mobile number" placeholder="Email or mobile number">
+    
+    </div>
+  
+    <div id="reenter">
+    
+      <input type="text" name="Re-enter email or mobile number" placeholder="Re-enter email or mobile number" >
+    
+    </div>
+
+    <div id="newpassword">
+    
+      <input type="text" name="New password" placeholder="New password" >
+    
+    </div>
+
+      <h3><label id="birthday">Birthday</label></h3>
+    
+    <div id="tarikh">
+    <div id="month" class="tarikh">
+      
+      <select  id="Bulan" name="Month">
+      <option value="Month">Month</option>
+      <option value="Januay">January</option>
+      <option value="February">February</option>
+      <option value="Mac">Mac</option>
+      <option value="April">April</option>
+      <option value="May">May</option>
+      <option value="June">June</option>
+      <option value="July">July</option>
+      <option value="August">August</option>
+      <option value="September">September</option>
+      <option value="October">October</option>
+      <option value="November">November</option>
+      <option value="Disember">Disember</option>
+                 
+      </select>
+    </div>
+
+    <div id="day" class="tarikh" >
+    
+     
+      <select id="hari" name="Day">
+      <option value="Day">Day</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+      <option value="26">26</option>
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option>
+      <option value="30">30</option>
+      <option value="31">31</option>           
+      </select>
+    </div>
+
+    <div id="year" class="tarikh">
+      <select name="Year">
+      <option value="Year">Year</option>
+      <option value="1991">1991</option>
+      <option value="1992">1992</option>
+      <option value="1993">1993</option>
+      <option value="1994">1994</option>
+      <option value="1995">1995</option>
+      <option value="1996">1996</option>
+      <option value="1997">1997</option>
+      <option value="1998">1998</option>
+      <option value="1999">1999</option>
+      <option value="2000">2000</option>
+      <option value="2001">2001</option>
+      <option value="2002">2002</option>         
+      </select>
+    </div>
+    
+    
+    <div id="biru">
+    <span style="color:blue";><a href="">Why do I need to provide my birthday ?</span>
+    
+    </div>
+
+    </div> <!--tarikh!-->
+
+    <div id="radiobutton" class="rb">
+    <p><input type = "radio" name = "gender" id = "radfemale" value = "female"/>
+    <label style="font-family: helvetica;" for="Female">Female</label>
+    <input type = "radio" name = "gender" id = "radmale" value = "male"/>
+    <label style="font-family: helvetica;" for="Male">Male</label>
+    </p>  
+    </div>
+
+    <div>
+    <label id="agree" font-family: helvetica>By clicking Sign Up, you agree to our <span style="color:blue";>Terms</span> and that you have read our <span style="color:blue";>Data Policy</span>, including our <span color:blue>Cookie Use.</span></label>
+    </div>
+ 
+    <div id="button">
+      <button style="width: 202px; height: 38px; border: 0px #F0F8FF solid;"><img src="subutton.png">
+      </button>
+    </div>
+
+    </form>
+  </div> <!--borang!-->
+</div> <!--container!-->
+
+
+</body>
+</html>
