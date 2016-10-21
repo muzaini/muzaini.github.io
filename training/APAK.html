@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Positioning part 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Khand" rel="stylesheet">
+	<style type="text/css"> 
+
+	*{
+		margin: 0;
+	}	
+
+div#container {
+    width: 1200px;
+    height: 1950px;
+    background: #1f1f46;
+    margin: auto;
+
+    }
+
+div#header {
+    background: red;
+    width: 1050px;
+    margin: auto;
+    height: 266px;
+}
+
+img {
+    width: 240px;
+    height: 240px;
+    border: 10px inset #a90000;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: mymove 2s infinite alternate ; 
+    }
+
+
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 140px;}
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 140px;}
+}
+
+h2 {
+    color: white;
+    font-size: 47px;
+    text-shadow: 0 0 1px #fff, 0 0 1px #090909, 0 0 1px #fff, 0 0 1px #101010, 0 0 30px #0e0e0e, 0 0 40px #0c0c0c, 0 0 55px #0a0a0a, 0 0 75px #0e0e0e;
+    vertical-align: top;
+    margin-top: -101px;
+    margin-left: 143px;
+}
+div#wording {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ntah {
+    display: inline-block;
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin-left: 130px;
+    margin-top: 120px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 5px solid #a90000;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.ntah :hover{
+  cursor: pointer;
+}
+
+
+div.squares {
+    background-color: #0a0a0a;
+    color: #fd0000;
+    width: 70px;
+    height:57px;
+    left: 43px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+    position: relative;
+    
+    font-size: 15px;
+    margin-top: 20px;
+    outline: 10px groove;
+}
+
+div#left {
+    display: inline-block;
+    margin-left: 90px;
+}
+
+div#right {
+    display: inline-block;
+    vertical-align: top;
+}
+	
+
+
+div#right {
+    display: inline-block;
+    vertical-align: top;
+    width: 850px;
+    height: 500px;
+    margin-left: 57px;
+    margin-top: 10px;
+    border: 9px inset #fd0000;
+    background-image: url(https://i.ytimg.com/vi/R7rAlAx377g/maxresdefault.jpg);
+    background-size: 600px;
+    font: 15px white;
+    padding-top: 10px;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding-left: 28px;
+    text-shadow: 2px 2px 5px red;
+    color: white;
+
+  
+    -webkit-column-count: 3; 
+    -moz-column-count: 3; 
+    column-count: 3;
+
+}
+
+
+
+div #right p {
+    font-size: 13px;
+    text-shadow: 1px 1px 1px #920d0d;
+    padding: 10px 10px;
+}
+
+.kotak {
+    display: inline-block;
+    background-color: red;
+    height: 120px;
+    width: 120px;
+    margin-left: 150px;
+    margin-top: 15px;
+    border: 2px solid red;
+    border-radius: 12px;
+}
+
+#kotak1{-webkit-transition: width 2s; 
+    transition: width 2s; 
+}
+
+div #kotak1:hover {
+    width: 100px;
+}
+
+#kotak2{-webkit-transition: width 2s, height 4s; 
+    transition: width 2s, height 4s;}
+div #kotak2:hover {
+    width: 100px;
+    height: 100px;
+}
+
+#kotak3{
+        
+    -webkit-transition: width 3s; /* Safari */
+    -webkit-transition-delay: 1s; /* Safari */
+    transition: width 3s;
+    transition-delay: 1s;
+}
+
+div #kotak3:hover {
+    height: 100px;
+}
+
+#kotak4{-webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+div #kotak4:hover {
+    width: 100px;
+    height: 100px;
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
+
+.bulat1 {
+    background-color: #a90000;
+    width: 30px;
+    height: 31px;
+    border-radius: 27px;
+    margin-left: 97px;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: -131px;
+}
+
+.bulat2 {
+    background-color: #a90000;
+    width: 30px;
+    height: 31px;
+    border-radius: 27px;
+    margin-left: -8px;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: -50px;
+}
+
+div#formsurvey {
+    padding-top: 109px;
+}
+
+#formsurvey{
+  display: -webkit-inline-box;
+  margin-left: 167px; 
+}
+#form{
+  width: 390px;
+  height: 265px;
+  border: 3px solid red;
+  margin: 10px;
+}
+#form input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#form input[type=submit] {
+    width: 100%;
+    background-color: #d23c12;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#form input[type=submit]:hover {
+    background-color: #d23c12;
+}
+
+div#form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 16px;
+}
+
+#survey{
+  width: 390px;
+  height: 276px;
+  border: 3px solid red;
+  margin: 10px;
+  border-radius: 5px;
+  background-color:  #f2f2f2;
+  padding: 10px;
+}
+
+#survey p {font-size: 9px;
+    
+    padding-top: 10px;}
+
+div#footer {
+    width: 900px;
+    height: 50px;
+    background-image: url(https://i.ytimg.com/vi/R7rAlAx377g/maxresdefault.jpg);
+    background-size: 916px;
+    border: 10px inset #fd0000;
+    margin-left: 149px;
+    margin-top:60px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+div #footer p {
+padding: 10px 10px;
+font-size: 16px;
+}
+
+
+     .rad{
+        display: inline-block;
+      }
+
+
+}
+textarea {
+    width: 330px;
+}
+
+#survey input[type=submit] {
+    width: 100%;
+    background-color: #d23c12;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;}
+
+#survey input[type=submit]:hover {
+    background-color: #d23c12;
+}
+
+* {
+    margin: -1px;
+}
+#video{
+  margin-left: 427px;
+  margin-top: 10px;
+  border: 3px solid red;
+  width: 450px;
+  height: 350px;
+}
+	</style>
+      </head>
+<body>
+<div id="container">
+  <div id="header"><img src="https://marketplace-images-production.s3-us-west-2.amazonaws.com/vault/items/square_thumbnail-545bb275-dad8-4dd5-8891-771a0a140b28-136x136-kulMb.png">
+
+      <h2>Types of Fire Extinguishers for the Home
+      </h2>
+
+      <div class="ntah">About</div>
+      <div class="ntah">Learn Safety</div>
+      <div class="ntah">Product</div>
+      <div class="ntah">Where to Buy</div>
+  </div>	
+  <div>
+    <div id="left">
+    <div class="squares">Residential - Fire Extinguishers</div>
+    <div class="squares">Pro - Fire Extinguishers
+    </div>
+    <div class="squares">Vehicles & Boats - Fire Extinguishers</div>
+   
+    </div>
+
+    <div id="right"><p>When it comes to fire extinguishers, no company is more at home.
+    Equipping your home with the right fire extinguishers is essential to the safety of your family and property. There are wide variety of extinguishers to help. Whether it is keeping a small self-contained fire from growing or creating a path to safety out of the home, having a fire extinguisher in your home can be the difference between a catastrophe and a close call.A fire extinguisher, or extinguisher, is an active fire protection device used to extinguish or control small fires, often in emergency situations. It is not intended for use on an out-of-control fire, such as one which has reached the ceiling, endangers the user (i.e., no escape route, smoke, explosion hazard, etc.), or otherwise requires the expertise of a fire department. Typically, a fire extinguisher consists of a hand-held cylindrical pressure vessel containing an agent which can be discharged to extinguish a fire. Fire extinguishers manufactured with non-cylindrical pressure vessels also exist, but are less common.
+
+
+    A stored-pressure fire extinguisher made by Oval Brand Fire Products
+    In the United States, fire extinguishers in all buildings other than houses are generally required to be serviced and inspected by a fire protection service company at least annually. Some jurisdictions require more frequent service for fire extinguishers. The servicer places a tag on the extinguisher to indicate the type of service performed (annual inspection, recharge, new fire extinguisher).
+
+
+    A British fire extinguisher with ID sign, call point and fire action sign
+    There are two main types of fire extinguishers: stored-pressure and cartridge-operated. In stored pressure units, the expellant is stored in the same chamber as the firefighting agent itself. Depending on the agent used, different propellants are used. With dry chemical extinguishers, nitrogen is typically used; water and foam extinguishers typically use air. Stored pressure fire extinguishers are the most common type. Cartridge-operated extinguishers contain the expellant gas in a separate cartridge that is punctured prior to discharge, exposing the propellant to the extinguishing agent. This type is not as common, used primarily in areas such as industrial facilities, where they receive higher-than-average use. They have the advantage of simple and prompt recharge, allowing an operator to discharge the extinguisher, recharge it, and return to the fire in a reasonable amount of time. Unlike stored pressure types, these extinguishers use compressed carbon dioxide instead of nitrogen, although nitrogen cartridges are used on low temperature (-60 rated) models. Cartridge operated extinguishers are available in dry chemical and dry powder types in the U.S. and in water, wetting agent, foam, dry chemical (classes ABC and B.C.), and dry powder (class D) types in the rest of the world.
+
+
+    Wheeled fire extinguisher and a sign inside a parking lot
+    Fire extinguishers are further divided into handheld and cart-mounted (also called wheeled extinguishers). Handheld extinguishers weigh from 0.5 to 14 kilograms (1.1 to 30.9 lb), and are hence, easily portable by hand. Cart-mounted units typically weigh more than 23 kilograms (51 lb). These wheeled models are most commonly found at construction sites, airport runways, heliports, as well as docks and marinas.</p>
+    </div>
+  </div>
+
+  <div >
+    <video id="video" width="450" height="350" autoplay>
+    <source src="APAK.mp4" type="video/mp4">
+  
+    Your browser does not support the video tag.
+
+    </video>
+  </div>
+
+  <div id="under">
+
+    <div id="kotak1"class="kotak" >
+    <img src="Class A.jpg">	
+      <div class="bulat1"></div> 
+      <div class="bulat2"></div>
+    </div>
+
+    <div id="kotak2"class="kotak"> 
+    <img src="Class B.jpg">
+      <div class="bulat1"></div> 
+      <div class="bulat2"></div>
+    </div>
+
+    <div id="kotak3"class="kotak">
+    <img src="Class C.jpg">  
+      <div class="bulat1"></div> 
+      <div class="bulat2"></div>
+    </div>
+
+    <div id="kotak4"class="kotak"> 
+    <img src="Class  D.jpg">
+      <div class="bulat1"></div> 
+      <div class="bulat2"></div>
+    </div>	
+  </div>
+
+
+
+<div id="formsurvey">
+
+    <div id="form">
+      <form action="action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname">
+
+      <label for="country">State</label>
+      <select id="country" name="country">
+      <option value="Perlis">Perlis</option>
+      <option value="Kedah">Kedah</option>
+      <option value="Pulau Pinang">Pulau Pinang
+      </option>
+      <option value="Perak">Perak</option>
+      <option value="Selangor">Selangor</option>
+      <option value="Negeri Sembilan">Negeri Sembilan</option>
+      <option value="Melaka">Melaka</option>
+      <option value="Johor">Johor</option>
+      <option value="Pahang">Pahang</option>
+      <option value="Terengganu">Terengganu</option>
+      <option value="Kelantan">Kelantan</option>
+      <option value="Sabah">Sabah</option>
+      <option value="Sarawak">Sarawak</option>
+      
+      <option value="WPKL">WP Kuala Lumpur</option><option value="WPPJ">WP Putrajaya</option>
+      <option value="WPL">P Labuan</option>
+      
+      </select>
+  
+      <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <div id="survey"><div><label>Gender</label>
+    </div>
+
+    <div>
+      <form action="" >
+    <input type="radio" name="gender" value="male"class="rad"> Male<br>
+    <input type="radio" name="gender" value="female"class="rad"> Female<br>
+    <input type="radio" name="gender" value="other"class="rad"> Other
+  </div>
+
+    <p><b>Note:</b> Sellect one of above.</p></br>
+    <div>
+      <p>Tick any preferences below (if any):</p>
+      <form>
+      <div class="checkbox">
+      <label><input type="checkbox" value="">Send email updates</label>
+    </div>
+
+    <div class="checkbox">
+      <label><input type="checkbox" value="">New Product Updates</label>
+    </div>
+
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" >Catalouge Notification</label>
+    </div>
+
+    </br>
+    <div> 
+      <label>Inquiry</label><form >
+      <textarea></textarea>
+    </div>
+  <div>    
+  <input type="submit" value="Submit">
+  </div>
+
+  </div>
+  </form>
+  </div>
+</div>
+
+  <div id="footer"><p>Fire safety is the set of practices intended to reduce the destruction caused by fire. Fire safety measures include those that are intended to prevent ignition of an uncontrolled fire, and those that are used to limit the development and effects of a fire after it starts.</p>
+  </div>
+
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
