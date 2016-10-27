@@ -1,0 +1,422 @@
+@media only screen and (max-width: 999px) 
+{
+#tagList li:hover{
+    background: #c2e4e9;
+    color: #505050;
+}
+#tagList li {
+    display: inline-block;
+    float: none;
+    }
+.recipes h2, #details h3 {
+    font-weight: bold;
+    font-size: 2.5em;
+}
+#tagList{padding: 0;}
+#pageshell, #footer > .inner
+{
+    width: 100%; height: auto;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+#pageshell {min-height: 300px}
+
+#pageshell > #header > #nav, .slider .arrow
+{
+    display: none;    
+}
+
+.d {display: none}
+.m {display: block}   
+    
+#pageshell, #footer > .inner
+{
+    width: 100%; height: auto;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+} 
+#pageshell > a > img {width: 100%; margin-bottom: 7%;}
+#nav {display: none}
+#logo 
+{
+    width: 80%; max-width: 468px;
+    padding-top: 10%;
+}
+#logo div, #logo h1
+{
+    position: absolute; top: 70%; left: 7%; z-index: 2;
+    font: 9px "FuturaBook";
+    color: #5e5e5d;
+    text-align: left;
+    display: none;
+}
+#mobilenav 
+{
+    position: fixed; top: 0px; left: 0px;
+    width: 100%; height: 6%; display: block;
+    background: #def5f9; overflow: visible;
+    z-index: 100;
+}
+#mobilenav > img 
+{
+    width: 5.5%; height: auto;
+    margin: 2% 0px 0px 1.875%;
+    cursor: pointer;
+}
+
+#mobilenav > div 
+{
+    position: absolute; top: 21px; left: -100%;
+    width: 225px; height: 341px;
+    padding: 50px 19px 50px 25px;
+    background: #def5f9;    
+    text-align: left;
+    box-shadow: 10px 15px 20px 0px #666666;  
+} 
+#mobilenav > div > div
+{
+    width: 100%; height: 51px;
+    padding-top: 20px;
+    background-image: url(../images/nav/border-dotted.jpg);
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    text-align: left;
+} 
+#mobilenav > div > div a 
+{
+    font: 15px "FuturaBook", Futura, Verdana, Sans-Serif;
+    color: #505050;
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+}
+#mobilenav > div > div a img
+{
+    display: inline-block;
+    margin-left: 4px; margin-bottom: 2px;
+}
+.slider .nav 
+{
+    position: absolute; top: 0px; right: 0px;
+    width: 100px; height: 15px;
+}
+.home.slide h2 {
+    display: none
+}
+
+#footer 
+{
+    font: 60.33% Helvetica, Sans-Serif;
+    margin-top: 1%;
+}
+
+#footer > .inner > div {}
+
+#footer > .inner > div.logo 
+{
+    height: 30px;
+    margin: 0% 4% 5%; 
+}
+
+#footer > .inner > div.logo img
+{
+    height: 30px;
+}
+
+#quizarea {
+    width: 96%;
+    margin: 0 2%;
+}
+
+#quizarea .dotbar {
+    margin-bottom: 4%;
+}
+#quizarea .a:hover {background-color: #c9deed;}
+#quizarea .q > div {
+    font: 11.48px "FuturaBook",Futura,Verdana,sans-serif;
+}
+
+#quizarea .q {
+    font: 14px "Naive",sans-serif;
+}
+
+#quizarea .a {
+    width: 49%;
+    height: 55px;
+    margin: 2% 2% 0 0;
+    font: 10.57px/49px "FuturaBook",Futura,Verdana,sans-serif;
+}
+
+#quizarea .a.second {
+    margin-right: 0;
+}
+
+#quizarea .a.first {
+    margin-right: 2%;
+}
+
+#quizarea .back, #quizarea .next {
+    margin-bottom: 15%;
+    margin-top: 5%;
+}
+
+.slider.quiz {margin-bottom: 10px}
+.slider.quiz .slide h1 {
+    top: 44px; left: 16px; width: 210px;
+    font: 6.37px "FuturaBook",Futura,Verdana,sans-serif;    
+}
+.slider.quiz .slide h1 br {display: none}
+.slider.quiz .slide h1 b br {display: block}
+
+.slider.quiz .slide h1 span {
+    font: 20.31px/15px "StarsFromOurEyes",sans-serif;
+}
+
+.slider.quiz .slide h1 b {
+    font: 32px/28px "Naive",sans-serif;
+    letter-spacing: 1px;
+}
+
+
+/* Quiz Results */
+
+#quizarea .results .again {
+    font: 9px "FuturaBook",Futura,Verdana,sans-serif;
+    left: 14.5%;
+    padding-right: 14px;
+    top: 58.46%;
+    background-size: 10px 10px;
+    background-image: url(../images/quiz/m-carets-right.png);
+}
+
+#quizarea .results .dotbar {
+    margin: 20px 0 16px;
+}
+
+#quizarea .results .share {
+    font: bold 9.11px/11px "Naive",sans-serif;
+    top: 77.1%;
+    width: 100%;
+}
+
+#quizarea .results .share .icon {
+    margin: 0% 1%;
+    width: 14px; height: 14px;
+}
+
+#quizarea .results .share > div {
+    margin-bottom: 3%;
+    width: 42%;
+}
+
+#recipe-share h2 {
+    font: 17px "Naive",sans-serif;
+    margin: 25px 0px 14px 0px;
+}
+#recipe-more h2 {
+    font: 17px "Naive",sans-serif;
+    margin: 6px 0px 14px -15px;
+}
+#recipe-share .m {display: inline-block}
+
+#quizarea .yaml #recipe-more {
+    width: 280px; margin-left: 15px; height: 150px;
+}
+
+#quizarea .yaml #recipe-more > div, #quizarea .yaml #recipe-more > div > div {
+    font: 9px "FuturaBook",Futura,Verdana,sans-serif;
+    height: 150px;
+}
+#quizarea .yaml #recipe-more > div > div span {
+    width: 94px; padding: 0px 5px;
+}
+
+#recipe-more > div > div span img {
+    width: 84px;
+}
+
+#recipe-more .right-arrow {
+    right: -6%;
+    width: 10px;
+}
+
+#recipe-more .left-arrow {
+    left: -6%;
+    width: 10px;
+}
+
+.recipes.slider {margin-bottom: 0px;}
+.recipes.slider .slide h1 span {font-size: 15px; line-height: 10.17px}
+.recipes.slider .slide h1 b {font-size: 29.76px; line-height: 30px; letter-spacing: normal}
+.recipes.slider .slide h1 
+{
+    top: 33%; left: 15%; width: 75%;
+    font-size: 8.33px; line-height: normal;
+}
+.recipes.slider .slide h1 br {display: none}
+
+#recipes-area > div 
+{
+    text-align: center;
+    font-size: 0px; line-height: 0px;
+    padding-bottom: 2%;
+}
+
+#recipes-area .seemore {
+    font-size: 14px;
+}
+
+#recipes-area .seemore img {
+    margin-left: 0px;
+}
+
+.recipe 
+{
+    width: 150px; height: 150px;
+    margin: auto;
+    padding: 1.5%;
+}
+.fourth.recipe {margin: 0px;}
+.recipe img {width: 100%}
+.recipe .title {display: none}
+
+.recipe-full {width: 95%; float: none; margin: auto;}
+#recipe-prep-area,
+#recipe-area 
+{
+    width: 100%; min-height: 0px;
+    padding: 4%;
+}
+.recipe-content h1 {
+    font-size: 20px;
+}
+.recipe-content h2 {
+    font-size: 17px;
+}
+.recipe-content .dotbar {width: 100%;}
+#recipe-more 
+{
+    margin-left: 15px;
+    width: 252px;
+}
+
+#recipe-more > div { width: 252px; }
+#recipe-more > div > div img {width: 58px}
+#recipe-more .right-arrow {width: 9px; top: 55px}
+#recipe-more .left-arrow {width: 9px; top: 55px}
+
+#searcharea {
+    font: 12.74px "FuturaBook",Futura,Verdana,sans-serif;
+}
+
+#searcharea h1 {font-size: 30px; line-height: normal; padding-top: 4%;}
+#searcharea > div p {font-size: 16px; line-height: normal}
+#searcharea > div input[type="text"] {width: 90%;}
+#searcharea > div p span.dotbar {width: 20%}
+#searcharea > div div {width: 90%; font-size: 16px}
+#searcharea > div div span {display: block; font-size: 16px}
+#searcharea p.legal {display: block; font-size: 14px; padding: 20px 10px 10px 10px; text-align: left;}
+#searcharea > div {font-size: 20px;}
+#searcharea > div a.search {font-size: 14px; margin-top: 10%;}
+#searcharea .results div {font-size: 14px; line-height: 16px; margin-bottom: 6px}
+
+
+.slider.portions .slide {width: 100%; min-height: 192px}
+.slider.portions .slide h2
+{
+    position: absolute; top: 16%; left: 0%;
+    font: 16.37px/20px "FuturaBook", Futura, Verdana, Sans-Serif;
+}
+.slider.portions .slide h2 b 
+{
+    font: 29px/35px "Naive", Sans-Serif;
+}
+.slider.portions .slide h2 span 
+{
+    font: 20px/15px "StarsFromOurEyes", Sans-Serif;
+}
+
+#portionarea 
+{
+    font: 16px "FuturaBook", Futura, Verdana, Sans-Serif;
+}
+#portionarea h3
+{
+    font: 18px "Naive", Sans-Serif;
+}
+#portionarea .left {float: left; max-width: 280px}
+#portionarea .right {float: right; max-width: 300px}
+#portionarea .clear {clear: both}
+
+#icinfoarea .share-area > div 
+{
+    display: inline-block;
+}
+
+/* visualization */
+.mr-space 
+{
+    width: 100%; margin: auto;
+    min-height: 1600px;
+}
+
+}
+
+
+@media only screen and (min-width: 450px) and (max-width: 999px) 
+{
+#logo div,
+#logo h1 {display: block; top: 78%; font-size: 13px; left: 7.5%;}
+.quiz.slider .slide h1 br,
+.slider.recipes .slide h1 br {display: block}
+.recipe {width: 24.6%}
+#recipes-area > div {text-align: left}
+#quizarea .results .again 
+{
+    top: 62%; background-position: right center;
+}
+.slider.recipes .slide h1 {font: 16.37px/20px "FuturaBook"}
+.slider.recipes .slide h1 b {font: 73.32px/73px "Naive", Sans-Serif}
+.slider.recipes .slide h1 span {font: 38.65px/25px "StarsFromOurEyes", Sans-Serif}
+.quiz.slider .slide h1 {width: 100%; top: 85px; left: -12%; font: 16.37px "FuturaBook", Futura, Verdana, Sans-Serif}
+.quiz.slider .slide h1 b {font: 84px/84px "Naive", Sans-Serif}
+.quiz.slider .slide h1 span {font: 44.31px/25px "StarsFromOurEyes", Sans-Serif}
+
+#quizarea .results .share {width: 90%}
+
+#footer > .inner {max-width: 450px}
+
+}
+@media only screen and (max-width: 500px)
+{
+
+    #filterBox .slide
+    {
+        position: relative;
+        padding-top: 0.1em;
+    }
+    .tagName{
+        display:block;
+    }
+    .tagName:after {
+        font-family: arial, Sans-Serif;
+        font-size: 0.5em;
+        content: '\2022';
+        vertical-align: 0.3em;
+        padding: 0 0.3em;
+    }
+    .dot
+    {
+        display:none;
+    }
+    #error_display {
+        font-size: 1.3em;
+        padding: 1em 0;
+    }
+    .recipes h2, #details h3 {
+        font-size: 3em;
+        margin: 0.4em 0 0 0;
+    }
+}
