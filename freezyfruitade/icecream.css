@@ -20,6 +20,7 @@ a {text-decoration: none}
     font-size: 50px;
     
 }
+section{background-image=("ic1.jpg")}
 video{
     border: 3px solid purple;
     box-shadow: 10px 0px 10px 0px black;
